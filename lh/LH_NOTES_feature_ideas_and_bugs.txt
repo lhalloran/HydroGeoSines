@@ -1,2 +1,8 @@
-* make datetime importing more robust (e.g., data file with separate date and time columns).
-
+IMPROVEMENTS (IDEAS):
+* Make datetime importing more robust (e.g., data file with separate date and time columns).
+* Lomb-Scargle Periodogram (for data with gaps) vs. HALS - add in (or is there no advantage?)
+* make an import_xls() (loop through tabs)... should be easy using pandas
+* hgs.BP_align - infinite loop when time periods GW vs. BP have a significant portion with no mismatch - should raise error, tell user to chop data
+* BE_time should accept inter_max etc. as optional argument that gets fed-on
+* after manual processsing (realign, etc.), how to put data back into a Site object? This should be an easy single-line function.
+* make "T" data a data type in addition to "GW" "ET" etc.
